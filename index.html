@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greens Collector Game</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid border-1">
+        <header class="headerimage"></header>
+        <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center">
+                 <img src="assets/images/veggieheader.png" class="img responsive border">
+            </div>
+        </div>
+   
+
+        <div id="rules" class="row d-flex justify-content-center border-1">
+            <p class="text-center">You will be given a random number at the start of the game.</p>
+            <p class="text-center">There are four greens below. By clicking on a green you will add a specific amount of points to your total score.</p>
+            <p class="text-center">You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+            <p class="text-center">The value of each green is hidden from you until you click on it.</p>
+            <p class="text-center">Each time when the game starts, the game will change the value of each crystal.</p>
+        </div>
+
+        <div class="row">
+            <div id="elements" class="col justify-content-center p-2 mt-2 mb-2">
+                <div>
+                    Match:
+                    <p id="randomNumber"></p>
+                </div>
+            </div>
+            <div id="elements" class="col justify-content-center p-2 mt-2 mb-2">
+                <div>
+                    Wins:
+                    <p id="wins"></p>
+                </div>
+                <div>
+                    Losses:
+                    <p id="losses"></p>
+                </div>
+            </div>
+            <div id="elements" class="col justify-content-center p-2 mt-2 mb-2">
+                <div>
+                    Your score is:
+                    <p id="score"></p>
+                </div> 
+            </div>
+        </div>
+
+        <div id="greenimages" class="row">
+            <div class="col text-center">
+                <img id="strawberries" src="assets/images/strawberries.png" class="image">
+            </div>
+            <div class="col text-center">
+                <img id="blueberries" src="assets/images/blueberries.png" class="image">
+            </div>
+            <div class="col text-center">
+               <img id="carrots" src="assets/images/carrots.png" class="image">
+            </div>
+            <div class="col text-center">
+                <img id="cucumbers" src="assets/images/cucumbers.png" class="image">
+            </div>
+        </div>
+    </div>
+
+
+<script src="assets/javascript/game.js"></script>  
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>

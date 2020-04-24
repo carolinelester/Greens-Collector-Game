@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+}
+
+.container-fluid {
+    max-width: 820px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: mintcream;
+    color: black;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#rules {
+    border: double darkgreen;
+    margin-bottom: 2px;
+    
+}
+
+#elements {
+    border: darkgreen solid 1px;
+}
+
+.image {
+    width: 165px;
+    height: 165px;
+    justify-content: center;
+    border: solid white 2px;
+}
+
+.image:hover {
+    background-color: teal 2px;
+    box-shadow: 0 0 10px
+}
