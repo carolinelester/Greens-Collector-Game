@@ -35,3 +35,7 @@ body {
     background-color: teal 2px;
     box-shadow: 0 0 10px
 }
+
+#randomNumber {
+    font-weight: bold;
+}
