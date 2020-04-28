@@ -39,3 +39,7 @@ body {
 #randomNumber {
     font-weight: bold;
 }
+
+#elements {
+    text-align: center;
+}

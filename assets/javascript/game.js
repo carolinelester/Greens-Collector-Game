@@ -26,7 +26,7 @@ function reset () { //trigger to reset game
 
     score = 0;
     $("#score").html(score);
-    var computerGuess = parseInt(Math.floor(Math.random() * 102) + 19);
+    computerGuess = parseInt(Math.floor(Math.random() * 102) + 19);
     $("#randomNumber").replaceWith(computerGuess);
     console.log("Match: " + computerGuess);
     
@@ -98,16 +98,16 @@ $("#cucumbers").on("click", function() {
 function checkifWon() {
     if (score == computerGuess) {
         wins++
-        console.log(wins);
-        alert("You've Won! Congrats!");
+        console.log("Wins: " + wins);
         $("#wins").replaceWith(wins);
+        alert("You've Won! Congrats!");
         reset ();
     }
     else if (score > computerGuess) {
         losses++
-        console.log(losses);
-        alert("You've lost! Try Again!");
+        console.log("Losses: " + losses);
         $("#losses").replaceWith(losses);
+        alert("You've lost! Try Again!");
         reset();
     }
 }
