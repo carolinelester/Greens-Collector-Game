@@ -27,7 +27,7 @@ function reset () { //trigger to reset game
     score = 0;
     $("#score").html(score);
     computerGuess = parseInt(Math.floor(Math.random() * 102) + 19);
-    $("#randomNumber").replaceWith(computerGuess);
+    $("#randomNumber").html(computerGuess);
     console.log("Match: " + computerGuess);
     
 
@@ -48,7 +48,7 @@ $("#strawberries").on("click", function() {
     $("#score").html(score);
     console.log("score1: " + score);
 
-    if (score == computerGuess) {
+    if (score === computerGuess) {
         checkifWon();
     }
     else if (score > computerGuess) {
@@ -62,7 +62,7 @@ $("#blueberries").on("click", function() {
     $("#score").html(score);
     console.log("score2: " + score);
 
-    if (score == computerGuess) {
+    if (score === computerGuess) {
         checkifWon();
     }
 
@@ -75,7 +75,7 @@ $("#carrots").on("click", function() {
     score = score + carrot;
     $("#score").html(score);
     console.log("score3: " + score);
-    if (score == computerGuess) {
+    if (score === computerGuess) {
         checkifWon();
     }
     else if (score >= computerGuess) {
@@ -87,7 +87,7 @@ $("#cucumbers").on("click", function() {
     score = score + cucumber;
     $("#score").html(score);
     console.log("score4: " + score);
-    if (score == computerGuess) {
+    if (score === computerGuess) {
         checkifWon();
     }
     else if (score >= computerGuess) {
@@ -96,17 +96,17 @@ $("#cucumbers").on("click", function() {
 });
 
 function checkifWon() {
-    if (score == computerGuess) {
+    if (score === computerGuess) {
         wins++
         console.log("Wins: " + wins);
-        $("#wins").replaceWith(wins);
+        $("#wins").html(wins);
         alert("You've Won! Congrats!");
         reset ();
     }
     else if (score > computerGuess) {
         losses++
         console.log("Losses: " + losses);
-        $("#losses").replaceWith(losses);
+        $("#losses").html(losses);
         alert("You've lost! Try Again!");
         reset();
     }
